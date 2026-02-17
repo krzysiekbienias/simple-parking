@@ -24,3 +24,20 @@ Implement the `ParkingSystem` class:
 > initialized in the constructor. The `addCar(carType)` method checks if there is at least one free slot for the requested
 > car size; if so, it decrements the corresponding counter and returns `true`, otherwise it eventually returns `false`.
 > Each call runs in $O(1)$ time and uses $O(1)$ extra space. 
+
+## Build & Run (CLI)
+
+```bash
+cmake -S . -B cmake-build-debug
+cmake --build cmake-build-debug
+```
+
+```bash
+./cmake-build-debug/app --help
+./cmake-build-debug/app --big 1 --medium 1 --small 1 --cars 1 2 3 3
+```
+
+To run unit tests, suit, run 
+```
+./test_launcher.sh
+```
